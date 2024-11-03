@@ -107,7 +107,7 @@ class tasks_operations():
 
 if __name__ == "__main__":
     try:
-        conn = mysql.connector.connect(host="localhost", user="root", database="moatasem")
+        conn = mysql.connector.connect(host="localhost", user="root", database="task_manger")
         choices_msg: str = "1 - Add New Task\n2 - Update Task Status\n3 - Delete Task\n4 - Show Tasks List\n5 - Quit from the program"
         if conn.is_connected():
             cursor = conn.cursor()
